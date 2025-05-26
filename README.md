@@ -1,16 +1,35 @@
-## Hi there 👋
+# Hi, I'm Adam Khald 👋
 
-<!--
-**Adamkhald/Adamkhald** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm an **AI and Data Science Engineer student** passionate about turning data into meaningful insights and building intelligent applications.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠️ Skills & Technologies
+
+- 💻 Programming Languages: C++, C#, Python  
+- 📱 Mobile Development: Android  
+- 🖥️ Desktop UI: Avalonia UI  
+- 🤖 AI & Data Science: Machine Learning, Data Analysis, Model Building
+
+---
+
+## 🎯 What I’m Working On
+
+- Learning cutting-edge AI algorithms and frameworks  
+- Developing cross-platform apps with Avalonia UI  
+- Building data-driven solutions and smart automation tools  
+
+---
+
+## 📫 How to Reach Me
+
+- Email: adam.khald@example.com  
+- LinkedIn: [linkedin.com/in/adamkhald](https://linkedin.com/in/adamkhald) *(replace with your actual)*  
+
+---
+
+Thanks for visiting my profile! Feel free to explore my repositories and projects.
+
+---
+
+*“Code is like humor. When you have to explain it, it’s bad.”* – Cory House
