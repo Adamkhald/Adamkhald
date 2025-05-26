@@ -23,8 +23,8 @@ I'm an **AI and Data Science Engineer student** passionate about turning data in
 
 ## 📫 How to Reach Me
 
-- Email: adam.khald@example.com  
-- LinkedIn: [linkedin.com/in/adamkhald](https://linkedin.com/in/adamkhald) *(replace with your actual)*  
+- Email: ad.khald20@gmail.com  
+- LinkedIn: [linkedin.com/in/adamkhald](https://www.linkedin.com/in/adam-khald-19634b261/) 
 
 ---
 
