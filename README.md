@@ -6,7 +6,7 @@ I'm an **AI and Data Science Engineer student** passionate about turning data in
 
 ## 🛠️ Skills & Technologies
 
-- 💻 Programming Languages: C++, C#, Python  
+- 💻 Programming Languages: C++, C#, Python, R, Kotlin, SQL
 - 📱 Mobile Development: Android  
 - 🖥️ Desktop UI: Avalonia UI  
 - 🤖 AI & Data Science: Machine Learning, Data Analysis, Model Building
