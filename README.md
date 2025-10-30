@@ -22,6 +22,7 @@ I'm an **AI & Data Science Engineering student** at ENSAM Meknès, passionate ab
 - **Focus:** Deep learning, time series prediction, model optimization
 
 ### Development
+- **Languages:** Python, C#, C++, Java, Kotlin, R, SQL
 - **Web:** Next.js, React, Tailwind CSS
 - **Infrastructure:** AWS, Git/GitHub, embedded systems
 - **Other Languages:** Algorithm development, problem-solving
