@@ -36,12 +36,12 @@ AI-powered chest X-ray analysis system for automated detection of 14 thoracic ab
 
 Tech Stack: YOLOv8, PyTorch, OpenCV, Python, Flask, Google Gemini AI
 
-### Trajectory Prediction for Autonomous Vehicles
+### [Trajectory Prediction for Autonomous Vehicles](https://github.com/AM1N8/TrajectoryPredictionProject)
 Time series prediction system for autonomous vehicle trajectory forecasting using CARLA simulation environment.
 
 **Tech Stack:** TensorFlow, Python
 
-### ColFi - Asset Finance Management DApp
+### [ColFi - Asset Finance Management DApp](https://github.com/Adamkhald/colfi-internship-dapp)
 Decentralized application for financial asset management, handling collaterals and bonds for financial institutions.
 
 **Tech Stack:** Next.js, React, Tailwind CSS, AWS, Hyperledger Fabric
