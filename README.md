@@ -1,4 +1,4 @@
-<h1 align="center">Adam</h1>
+<h1 align="center">Adam Khald</h1>
 
 <h3 align="center">AI & Data Science Engineer · Researcher in Explainable AI, Multi-Agent Systems & Autonomous Perception</h3>
 
