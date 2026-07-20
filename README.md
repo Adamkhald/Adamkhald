@@ -3,29 +3,27 @@
 <h3 align="center">AI & Data Science Engineer · Researcher in Explainable AI, Multi-Agent Systems & Autonomous Perception</h3>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:YOUR_EMAIL@domain.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/adam-khald-19634b261/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:ad.khald@edu.umi.ac.ma"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
   <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=flat-square&logo=google-scholar&logoColor=white" /></a>
-  <a href="https://orcid.org/YOUR-ORCID-ID"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" /></a>
+  <a href="https://orcid.org/0009-0006-3709-847X"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" /></a>
   <a href="https://your-personal-site.com"><img src="https://img.shields.io/badge/Website-000000?style=flat-square&logo=todoist&logoColor=white" /></a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=flat-square&color=blue" />
 </p>
 
 ---
 
 ## About Me
 
-I am a final-year **AI & Data Science Engineering** student at **ENSAM Meknès, Université Moulay Ismaïl (Morocco)**, working at the intersection of **explainable AI, multi-agent LLM systems, and autonomous perception**. My work focuses on making complex AI pipelines more transparent, auditable, and reliable — a problem I believe is central to deploying AI safely in high-stakes, real-world systems.
+I am a final-year **AI & Data Science Engineering** student at **ENSAM Meknès, Université Moulay Ismaïl (Morocco)**, graduating June 2027. My work sits at the intersection of **explainable AI, multi-agent LLM systems, and autonomous perception** — with a common thread of making complex, multi-stage AI pipelines transparent and auditable rather than treating them as black boxes.
 
-I am currently seeking **funded Thesis-based Master's** and future **PhD opportunities** in labs working on explainability, autonomous systems, or multi-agent reasoning.
+Alongside research, I have spent the last two years building and shipping production AI systems across fintech, healthcare imaging, and applied machine learning tooling, giving me hands-on experience with the practical failure modes that motivate my research questions.
 
-- 🔭 Currently building research-grade pipelines in trajectory prediction and causal explainability for LLM agent systems
-- 🌱 Background spans applied ML (computer vision, time-series, NLP) and production AI systems engineering
-- 🎯 Long-term goal: contribute to research that makes autonomous and agentic AI systems verifiably trustworthy
-- 🤝 Open to research collaborations, co-authorship, and lab visits
+I am currently seeking **funded, thesis-based Master's** and future **PhD opportunities**, primarily in **Canada**, in labs working on explainability, multi-agent reasoning, or autonomous systems.
+
+- Currently completing a vehicle trajectory prediction study (PointNet + BiLSTM with attention) on nuScenes, and preparing an arXiv submission for my Hierarchical Explanation Graph (HEG) work
+- Background spans applied ML (computer vision, time-series, NLP) and production AI systems engineering across three internships and one independent AI agent platform
+- Long-term goal: contribute to research that makes autonomous and agentic AI systems verifiably trustworthy
+- Open to research collaborations, co-authorship, and lab visits
 
 ---
 
@@ -67,12 +65,13 @@ Architectures combining geometric representations (point clouds) with sequential
 <a href="https://doi.org/10.5281/zenodo.21009192"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.21009192.svg" /></a>
 
 **Abstract / Contribution:**
-HEG introduces a causal explainability framework designed for hierarchical, multi-agent LLM pipelines — systems where multiple orchestrators, planners, and executors interact across layers, making failure attribution notoriously difficult. The framework targets **confabulation detection** in dual-orchestrator setups, providing a structured graph representation that traces how and where reasoning errors propagate through a pipeline, rather than treating the system as a black box.
+HEG introduces a causal explainability framework for hierarchical, multi-agent LLM pipelines — systems where multiple orchestrators, planners, and executors interact across layers, making failure attribution notoriously difficult. A dual-orchestrator architecture executes the pipeline normally while a parallel orchestrator perturbs each layer's intermediate state and measures the resulting shift in the final output via cosine divergence, producing an experimentally grounded causal weight per layer. Across 7 tasks and 42 perturbation experiments, the framework detects systematic **confabulation** — self-explanations that are causally disconnected from the layer's actual influence on the output — most notably in the final evaluator layer, which explains its output with full confidence despite having near-zero measured causal contribution.
 
-This work is positioned at the intersection of **interpretability research** and **practical multi-agent system reliability**, aiming to give researchers and engineers a diagnostic tool for auditing complex agentic AI systems.
+This work is positioned at the intersection of **interpretability research** and **practical multi-agent system reliability**, providing a diagnostic tool for auditing complex agentic AI systems rather than trusting their self-reports.
 
 **DOI:** [10.5281/zenodo.21009192](https://doi.org/10.5281/zenodo.21009192)
 **Affiliation:** ENSAM Meknès
+**Status:** Published on Zenodo; arXiv submission in preparation
 
 </td>
 </tr>
@@ -82,7 +81,7 @@ This work is positioned at the intersection of **interpretability research** and
 <summary><b>In progress: Vehicle Trajectory Prediction (PointNet + BiLSTM with Attention, nuScenes)</b></summary>
 <br>
 
-A trajectory prediction model combining point-cloud feature extraction (PointNet) with a BiLSTM-Attention sequence model, benchmarked on the nuScenes dataset. Builds on prior CARLA-based simulation work in autonomous vehicle perception. Manuscript in preparation.
+A trajectory prediction model combining point-cloud feature extraction (PointNet) with a BiLSTM-Attention sequence model, benchmarked on the nuScenes dataset. Builds on prior CARLA-simulation-based autonomous vehicle work. Full research pipeline set up (EDA, baseline benchmarking, model implementation, ablations, writeup). Manuscript in preparation.
 
 </details>
 
@@ -90,62 +89,57 @@ A trajectory prediction model combining point-cloud feature extraction (PointNet
 
 ## Featured Projects
 
-<table>
-<tr>
-<td width="50%">
+### Hierarchical Explanation Graph (HEG)
+Causal explainability framework for hierarchical multi-agent LLM pipelines, detecting confabulated self-explanations via controlled perturbation experiments. Full methodology and results in the paper above.
+`Tech: Python, GPT-4o, dual-orchestrator architecture, sentence embeddings` · `Status: Published (Zenodo), arXiv in preparation`
 
-### 🔹 Project 1
-**[Repository Name]**
-Short description of the project, the problem it solves, and the core technical approach used.
-`Tech: ` · `Status: `
+### Ciffeer
+An AI agent SaaS platform I designed and built solo, under my own entity (Corarea). Implements a multi-layer planning architecture (Orchestrator → Planner → Mid-Level Planner → Analyser → Executor → Evaluator) with over 100 tools across 15 categories, semantic memory via pgvector, and a governed DRAFT/AUTO approval workflow for agent actions. Deployed in production on Google Cloud Run.
+`Tech: Go, Python/FastAPI, Next.js, Supabase/pgvector, Docker, GCP Cloud Run` · `Status: Live in production`
 
-</td>
-<td width="50%">
+### COLFI Back-Office Platform & LLM Monitoring Agent
+Built during a second internship at COLFI (London-based fintech), a React + FastAPI back-office application for corporate action processing, OCR-assisted document extraction, ISO 20022 payload generation, and treasury funding allocation optimization. My contribution centered on an LLM monitoring agent, built on top of the platform's existing multi-agent orchestration system, for detecting and narrating drift in financial models — including PPCA-based drift detection, a deterministic cash placement optimizer, and a governed recommendation schema for surfacing model-drift alerts to operators.
+`Tech: React, FastAPI, PostgreSQL, PyMuPDF/EasyOCR, OpenAI API, multi-agent orchestration` · `Status: Private repository`
 
-### 🔹 Project 2
-**[Repository Name]**
-Short description of the project, the problem it solves, and the core technical approach used.
-`Tech: ` · `Status: `
+### ColFi Collateral Finance Management DApp
+Built during a first internship at COLFI (Summer 2025), a decentralized asset and collateral management platform for financial institutions. Implemented Hyperledger Fabric chaincode for asset state transitions, collateral locking/unlocking, and immutable audit trails, with a Next.js frontend and a Fabric network hosted directly on Amazon EC2 (rather than Amazon Managed Blockchain).
+`Tech: Hyperledger Fabric, Next.js/TypeScript, AWS EC2, AWS Amplify (API Gateway, Lambda, DynamoDB)` · `Status: Public repository`
+[Repository](https://github.com/Adamkhald/colfi-internship-dapp)
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+### Insight-Ray
+An AI-powered chest X-ray analysis system detecting and classifying 14 thoracic abnormality classes using a YOLOv8 model fine-tuned on the VinBigData Chest X-ray Abnormalities Detection dataset (18,000+ images). Combines detection with natural-language explanations of findings via Google's Gemini API, exposed through both a Flask web app and a Tkinter desktop interface. Built and clearly scoped as a research/educational tool, not for clinical use.
+`Tech: YOLOv8/Ultralytics, Flask, Tkinter, OpenCV, Gemini API` · `Status: Public repository`
+[Repository](https://github.com/Adamkhald/InsightRay)
 
-### 🔹 Project 3
-**[Repository Name]**
-Short description of the project, the problem it solves, and the core technical approach used.
-`Tech: ` · `Status: `
+### Dalil AI
+An offline-first desktop research platform unifying scikit-learn, PyTorch, TensorFlow, MediaPipe, and Stable-Baselines3/Gymnasium behind a single GUI, so classical ML, deep learning, computer vision, and reinforcement learning workflows can all be run locally without cloud dependency. Includes a 7-step scikit-learn wizard, a PyTorch transfer-learning lab, TFLite export for edge deployment, real-time MediaPipe vision, and an RL Studio for training PPO/DQN/SAC agents.
+`Tech: Python, PyTorch, TensorFlow, scikit-learn, MediaPipe, Stable-Baselines3` · `Status: Public repository`
+[Repository](https://github.com/Adamkhald/dalil_ai) · [Website](https://adamkhald.github.io/dalil_ai/)
 
-</td>
-<td width="50%">
+### Breiman CART
+A pure Python, from-scratch reimplementation of the original CART (Classification and Regression Trees) algorithm as specified by Breiman, Friedman, Olshen, and Stone (1984), including cost-complexity pruning, native categorical feature handling, and full tree inspection — published as an installable package.
+`Tech: Python` · `Status: Published on PyPI`
+[PyPI](https://pypi.org/project/breiman-cart/) · [Repository](https://github.com/Adamkhald/breiman-cart)
 
-### 🔹 Project 4
-**[Repository Name]**
-Short description of the project, the problem it solves, and the core technical approach used.
-`Tech: ` · `Status: `
+---
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+## Industry & Applied Experience
 
-### 🔹 Project 5
-**[Repository Name]**
-Short description of the project, the problem it solves, and the core technical approach used.
-`Tech: ` · `Status: `
+**COLFI** — London-based fintech · *DApp Developer Intern, Summer 2025*
+Built the Hyperledger Fabric-based collateral management DApp described above.
 
-</td>
-<td width="50%">
+**COLFI** — London-based fintech · *Second internship*
+Contributed the LLM-based financial model monitoring agent described above, built on the platform's existing multi-agent orchestration system.
 
-### 🔹 Project 6
-**[Repository Name]**
-Short description of the project, the problem it solves, and the core technical approach used.
-`Tech: ` · `Status: `
+**OCP MEA** — Integrated Mine, MEA washing facility · *Internship*
+Proposed a machine-learning-based soft sensor for pulp density estimation, scoped and delivered over a three-week engagement.
 
-</td>
-</tr>
-</table>
+---
+
+## Awards & Recognition
+
+- **1st Prize, Innov'am 2024** — Autonomous TGV bogie inspection robot
+- **3rd Prize, Innovathon 2024**
 
 ---
 
@@ -154,20 +148,24 @@ Short description of the project, the problem it solves, and the core technical 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
   <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
 </p>
+
+**Languages:** English, French, Arabic, German (B2, self-studied)
 
 ---
 
@@ -185,30 +183,13 @@ Short description of the project, the problem it solves, and the core technical 
 
 ---
 
-## GitHub Statistics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=default&hide_border=true&count_private=true" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=default&hide_border=true" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=default&hide_border=true" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=minimal&hide_border=true" width="97%" />
-</p>
-
----
-
 ## Connect with Me
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:YOUR_EMAIL@domain.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/adam-khald-19634b261/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:ad.khald@edu.umi.ac.ma"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" /></a>
-  <a href="https://orcid.org/YOUR-ORCID-ID"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" /></a>
+  <a href="https://orcid.org/0009-0006-3709-847X"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" /></a>
   <a href="https://your-personal-site.com"><img src="https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=todoist&logoColor=white" /></a>
 </p>
 
