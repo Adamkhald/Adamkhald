@@ -18,7 +18,7 @@ I am a final-year **AI & Data Science Engineering** student at **ENSAM Meknès, 
 
 Alongside research, I have spent the last two years building and shipping production AI systems across fintech, healthcare imaging, and applied machine learning tooling, giving me hands-on experience with the practical failure modes that motivate my research questions.
 
-- Currently completing a vehicle trajectory prediction study (PointNet + BiLSTM with attention) on nuScenes, and preparing an arXiv submission for my Hierarchical Explanation Graph (HEG) work
+- Currently completing a vehicle trajectory prediction study (PointNet + BiLSTM with attention) on nuScenes
 - Background spans applied ML (computer vision, time-series, NLP) and production AI systems engineering across three internships and one independent AI agent platform
 - Open to research collaborations and co-authorship
 
