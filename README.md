@@ -18,12 +18,9 @@ I am a final-year **AI & Data Science Engineering** student at **ENSAM Meknès, 
 
 Alongside research, I have spent the last two years building and shipping production AI systems across fintech, healthcare imaging, and applied machine learning tooling, giving me hands-on experience with the practical failure modes that motivate my research questions.
 
-I am currently seeking **funded, thesis-based Master's** and future **PhD opportunities**, primarily in **Canada**, in labs working on explainability, multi-agent reasoning, or autonomous systems.
-
 - Currently completing a vehicle trajectory prediction study (PointNet + BiLSTM with attention) on nuScenes, and preparing an arXiv submission for my Hierarchical Explanation Graph (HEG) work
 - Background spans applied ML (computer vision, time-series, NLP) and production AI systems engineering across three internships and one independent AI agent platform
-- Long-term goal: contribute to research that makes autonomous and agentic AI systems verifiably trustworthy
-- Open to research collaborations, co-authorship, and lab visits
+- Open to research collaborations and co-authorship
 
 ---
 
@@ -89,37 +86,72 @@ A trajectory prediction model combining point-cloud feature extraction (PointNet
 
 ## Featured Projects
 
-### Hierarchical Explanation Graph (HEG)
-Causal explainability framework for hierarchical multi-agent LLM pipelines, detecting confabulated self-explanations via controlled perturbation experiments. Full methodology and results in the paper above.
-`Tech: Python, GPT-4o, dual-orchestrator architecture, sentence embeddings` · `Status: Published (Zenodo), arXiv in preparation`
+<table>
+<tr>
+<td width="50%">
 
-### Ciffeer
-An AI agent SaaS platform I designed and built solo, under my own entity (Corarea). Implements a multi-layer planning architecture (Orchestrator → Planner → Mid-Level Planner → Analyser → Executor → Evaluator) with over 100 tools across 15 categories, semantic memory via pgvector, and a governed DRAFT/AUTO approval workflow for agent actions. Deployed in production on Google Cloud Run.
-`Tech: Go, Python/FastAPI, Next.js, Supabase/pgvector, Docker, GCP Cloud Run` · `Status: Live in production`
+### 🔹 Hierarchical Explanation Graph (HEG)
+Causal explainability framework for hierarchical multi-agent LLM pipelines, detecting confabulated self-explanations via controlled perturbation experiments.
+`Tech: Python, GPT-4o, dual-orchestrator architecture` · `Status: Published (Zenodo), arXiv in prep`
 
-### COLFI Back-Office Platform & LLM Monitoring Agent
-Built during a second internship at COLFI (London-based fintech), a React + FastAPI back-office application for corporate action processing, OCR-assisted document extraction, ISO 20022 payload generation, and treasury funding allocation optimization. My contribution centered on an LLM monitoring agent, built on top of the platform's existing multi-agent orchestration system, for detecting and narrating drift in financial models — including PPCA-based drift detection, a deterministic cash placement optimizer, and a governed recommendation schema for surfacing model-drift alerts to operators.
-`Tech: React, FastAPI, PostgreSQL, PyMuPDF/EasyOCR, OpenAI API, multi-agent orchestration` · `Status: Private repository`
+</td>
+<td width="50%">
 
-### ColFi Collateral Finance Management DApp
-Built during a first internship at COLFI (Summer 2025), a decentralized asset and collateral management platform for financial institutions. Implemented Hyperledger Fabric chaincode for asset state transitions, collateral locking/unlocking, and immutable audit trails, with a Next.js frontend and a Fabric network hosted directly on Amazon EC2 (rather than Amazon Managed Blockchain).
-`Tech: Hyperledger Fabric, Next.js/TypeScript, AWS EC2, AWS Amplify (API Gateway, Lambda, DynamoDB)` · `Status: Public repository`
+### 🔹 Ciffeer
+AI agent SaaS platform designed and built solo (Corarea). Multi-layer planning architecture (Orchestrator → Planner → Mid-Level Planner → Analyser → Executor → Evaluator), 100+ tools across 15 categories, semantic memory via pgvector.
+`Tech: Go, Python/FastAPI, Next.js, Supabase/pgvector, GCP Cloud Run` · `Status: Live in production`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔹 COLFI Back-Office Platform & LLM Monitoring Agent
+React + FastAPI back-office platform for corporate action processing and treasury funding allocation. Built an LLM monitoring agent on top of the existing multi-agent orchestration system for financial model drift detection (PPCA-based) and governed alerting.
+`Tech: React, FastAPI, PostgreSQL, OpenAI API, multi-agent orchestration` · `Status: Private repository`
+
+</td>
+<td width="50%">
+
+### 🔹 ColFi Collateral Finance Management DApp
+Decentralized collateral/asset management platform for financial institutions. Hyperledger Fabric chaincode for asset state transitions and audit trails, Next.js frontend, Fabric network hosted on Amazon EC2.
+`Tech: Hyperledger Fabric, Next.js/TypeScript, AWS EC2, AWS Amplify` · `Status: Public repository`
 [Repository](https://github.com/Adamkhald/colfi-internship-dapp)
 
-### Insight-Ray
-An AI-powered chest X-ray analysis system detecting and classifying 14 thoracic abnormality classes using a YOLOv8 model fine-tuned on the VinBigData Chest X-ray Abnormalities Detection dataset (18,000+ images). Combines detection with natural-language explanations of findings via Google's Gemini API, exposed through both a Flask web app and a Tkinter desktop interface. Built and clearly scoped as a research/educational tool, not for clinical use.
-`Tech: YOLOv8/Ultralytics, Flask, Tkinter, OpenCV, Gemini API` · `Status: Public repository`
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔹 Insight-Ray
+AI-powered chest X-ray analysis system detecting 14 thoracic abnormality classes with YOLOv8, fine-tuned on VinBigData (18,000+ images), with Gemini-generated natural-language explanations of findings. Research/educational tool, not for clinical use.
+`Tech: YOLOv8/Ultralytics, Flask, Tkinter, Gemini API` · `Status: Public repository`
 [Repository](https://github.com/Adamkhald/InsightRay)
 
-### Dalil AI
-An offline-first desktop research platform unifying scikit-learn, PyTorch, TensorFlow, MediaPipe, and Stable-Baselines3/Gymnasium behind a single GUI, so classical ML, deep learning, computer vision, and reinforcement learning workflows can all be run locally without cloud dependency. Includes a 7-step scikit-learn wizard, a PyTorch transfer-learning lab, TFLite export for edge deployment, real-time MediaPipe vision, and an RL Studio for training PPO/DQN/SAC agents.
-`Tech: Python, PyTorch, TensorFlow, scikit-learn, MediaPipe, Stable-Baselines3` · `Status: Public repository`
+</td>
+<td width="50%">
+
+### 🔹 Dalil AI
+Offline-first desktop research platform unifying scikit-learn, PyTorch, TensorFlow, MediaPipe, and Stable-Baselines3/Gymnasium behind one GUI — classical ML, deep learning, computer vision, and RL, all local, no cloud dependency.
+`Tech: Python, PyTorch, TensorFlow, scikit-learn, MediaPipe` · `Status: Public repository`
 [Repository](https://github.com/Adamkhald/dalil_ai) · [Website](https://adamkhald.github.io/dalil_ai/)
 
-### Breiman CART
-A pure Python, from-scratch reimplementation of the original CART (Classification and Regression Trees) algorithm as specified by Breiman, Friedman, Olshen, and Stone (1984), including cost-complexity pruning, native categorical feature handling, and full tree inspection — published as an installable package.
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔹 Breiman CART
+Pure Python, from-scratch reimplementation of the original CART algorithm (Breiman, Friedman, Olshen & Stone, 1984), with cost-complexity pruning, native categorical feature handling, and full tree inspection.
 `Tech: Python` · `Status: Published on PyPI`
 [PyPI](https://pypi.org/project/breiman-cart/) · [Repository](https://github.com/Adamkhald/breiman-cart)
+
+</td>
+<td width="50%">
+
+</td>
+</tr>
+</table>
 
 ---
 
