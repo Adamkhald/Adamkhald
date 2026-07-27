@@ -202,6 +202,33 @@
   .hero-meta .k{ opacity:0.55; text-transform:uppercase; letter-spacing:0.08em; display:block; margin-bottom:0.4rem; }
   @media (max-width:640px){ .hero-meta{ grid-template-columns:1fr 1fr; } }
 
+  /* ---------- resume button ---------- */
+  .hero-actions{
+    margin-top:2.25rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+  }
+  .resume-btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    padding:0.85rem 1.4rem;
+    border:1px solid var(--line-inv);
+    display:inline-flex;
+    align-items:center;
+    gap:0.6rem;
+    transition:background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+  .resume-btn:hover{
+    background:var(--white);
+    color:var(--black);
+    border-color:var(--white);
+  }
+  .resume-btn .arrow{ opacity:0.6; transition:transform 0.25s ease; }
+  .resume-btn:hover .arrow{ transform:translateY(2px); }
+
   /* ---------- about / interests ---------- */
   .lead{
     font-size:clamp(1.3rem, 2.4vw, 1.9rem);
@@ -594,6 +621,13 @@
         <div class="hero-text">
           <h1>Adam<br>Khald</h1>
           <p class="role">AI &amp; Data Science Engineer.</p>
+          <div class="hero-actions">
+            <!-- Replace href below with the actual path to your resume PDF (e.g. resume.pdf placed next to this HTML file) -->
+            <a class="resume-btn" href="resume.pdf" download="Adam_Khald_Resume.pdf">
+              <span>Download Resume</span>
+              <span class="arrow mono">↓</span>
+            </a>
+          </div>
         </div>
         <div class="portrait">
           <!-- Replace src below with your own photo. Any image works — a grayscale filter keeps it on-theme automatically. -->
