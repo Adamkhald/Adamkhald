@@ -5,9 +5,8 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/adam-khald-19634b261/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:ad.khald@edu.umi.ac.ma"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
-  <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=flat-square&logo=google-scholar&logoColor=white" /></a>
   <a href="https://orcid.org/0009-0006-3709-847X"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" /></a>
-  <a href="https://your-personal-site.com"><img src="https://img.shields.io/badge/Website-000000?style=flat-square&logo=todoist&logoColor=white" /></a>
+  <a href="https://adamkhald.github.io/Adamkhald/"><img src="https://img.shields.io/badge/Website-000000?style=flat-square&logo=todoist&logoColor=white" /></a>
 </p>
 
 ---
